@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechEdu XP</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <div class="logo">
+        <img src="./spr/TechEduXP.png" height="50" width="50" alt="logo">  <!-- Por algum motivo o height e o widht se forem aplicados no css não funcionam (só está acontecendo isso com essa imagem em especifico) \_(°_°)_/ -->
+      </div>
+      <div class="site-name">TechEdu XP</div>
+    </div>
+    <div class="nav-links">
+      <a href="../Em-construcao/index.html">
+        <button>Redes</button>
+      </a>
+      <a href="../Em-construcao/index.html">
+        <button>Sistemas Operacionais</button>
+      </a>
+      <a href="../Em-construcao/index.html">
+        <button>Linguagens de Programação</button>
+      </a>
+      <a href="../Login/index.html">
+        <button>Login</button>
+      </a>
+  </header> 
+  <!-- Redes de Computadores -->
+  <main>
+    <div class="sections-container">
+      <div class="window section" id="redes">
+        <div class="title-bar">
+          <div class="title-bar-text">Redes de Computadores</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <p>Descubra como computadores se conectam pelo mundo! Entenda IPs, roteadores e muito mais.</p>
+          <a href="../Em-construcao/index.html">
+            <button>Acessar conteúdo</button>
+          </a>
+          <textarea placeholder="Anotações ou lembretes..."></textarea>
+          <button id="save-button">Salvar</button>
+          <img src="./spr/Redes.jpg" alt="Redes de computadores">
+        </div>
+      </div>
+  <!-- Sistemas Operacionais -->
+      <div class="window section" id="sistemas">
+        <div class="title-bar">
+          <div class="title-bar-text">Sistemas Operacionais</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <p>De MS-DOS ao Windows XP: entenda como o sistema conversa com seu hardware.</p>
+          <a href="../Em-construcao/index.html">
+            <button>Acessar conteúdo</button>
+          </a>
+          <textarea placeholder="Anotações ou lembretes..."></textarea>
+          <button id="save-button">Salvar</button>
+          <img src="./spr/SOs.jpg" alt="Sistemas Operacionais">
+        </div>
+      </div>
+  <!-- Linguagens de Programação -->
+      <div class="window section" id="linguagens">
+        <div class="title-bar">
+          <div class="title-bar-text">Linguagens de Programação</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <p>HTML, Python, C, JavaScript... Aprenda a linguagem que dá vida aos programas.</p>
+          <a href="../Em-construcao/index.html">
+            <button>Acessar conteúdo</button>
+          </a>
+          <textarea placeholder="Anotações ou lembretes..."></textarea>
+          <button id="save-button">Salvar</button>
+          <img src="./spr/Linguagens.png" alt="linguagens de programação">
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Em construção -->
+  <section class="text-window window">
+    <div class="title-bar">
+      <div class="title-bar-text">Softwares para desenvolvimento</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <p>Área em construção</p>
+      <button id="error-button">Em construção</button>
+    </div>
+  </section>
+    <!-- Conceitos Básicos -->
+  <section class="text-window window" style="max-width: 1000px; margin: 20px auto;">
+    <div class="title-bar toggle-btn" onclick="toggleConceitos()">
+      <div class="title-bar-text">Conceitos Básicos</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+      </div>
+          <div class="window-body" id="conceitos-body">
+            <section class="quad-container">
+              <div class="quad">
+                <h3>Hardware</h3>
+                <p>São as peças físicas do computador: teclado, mouse, monitor, placa-mãe, etc.</p>
+              </div>
+              <div class="quad">
+                <h3>Software</h3>
+                <p>São os programas que rodam no computador, como o navegador ou o sistema operacional.</p>
+              </div>
+              <div class="quad">
+                <h3>Scripts</h3>
+                <p>Pequenos códigos que automatizam tarefas, como instalar programas ou configurar algo.</p>
+              </div>
+              <div class="quad">
+                <h3>Internet</h3>
+                <p>Rede mundial que conecta dispositivos para trocar informações.</p>
+              </div>
+              <div class="quad">
+                <h3>CPU</h3>
+                <p>É o “cérebro” do computador, onde os cálculos e decisões acontecem.</p>
+              </div>
+              <div class="quad">
+                <h3>GPU</h3>
+                <p>Placa que cuida da parte gráfica, usada em jogos, vídeos e design.</p>
+              </div>
+              <div class="quad">
+                <h3>Memória RAM</h3>
+                <p>Memória temporária usada para guardar dados enquanto programas estão abertos.</p>
+              </div>
+              <div class="quad">
+                <h3>HD / SSD</h3>
+                <p>São os dispositivos de armazenamento onde ficam salvos os arquivos e programas do computador.</p>
+              </div>
+              <div class="quad">
+                <h3>Rede Local</h3>
+                <p>Conexão entre dispositivos próximos, como em casa ou no escritório.</p>
+              </div>
+              <div class="quad">
+                <h3>Firewall</h3>
+                <p>Protege o computador de acessos indesejados, como um segurança digital.</p>
+              </div>
+              <div class="quad">
+                <h3>Antivírus</h3>
+                <p>Programa que protege o computador contra vírus e malwares.</p>
+              </div>
+              <div class="quad">
+                <h3>Backup</h3>
+                <p>Cópia de segurança dos arquivos, para evitar perdas em caso de problemas.</p>
+              </div>      
+            </section>
+          </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- Tela Azul (Ideia excelente) -->
+  <div id="error" style="display: none;">
+    <div class="error-screen">
+      <pre>
+*** STOP: 0x000000D3 (0x00000000, 0x00000000)
+DRIVER_IRQL_NOT_LESS_OR_EQUAL
+
+A problem has been detected and Windows has been shut down to prevent damage
+to your computer.
+
+If this is the first time you've seen this Stop error screen,
+restart your computer. If this screen appears again, follow
+these steps:
+
+Check to make sure any new hardware or software is properly installed...
+
+Press any key to continue...
+      </pre>
+    </div>
+  </div>
+
+  <!-- Som de erro -->
+  <audio id="error-sound" src="https://www.myinstants.com/media/sounds/windows-xp-error.mp3" preload="auto"></audio>
+
+  <!-- Footer -->
+  <footer>
+    <div class="window">
+      <div class="title-bar">
+        <div class="title-bar-text">Rodapé</div>
+      </div>
+      <div class="window-body">
+        <a href="../../index.html" id="link-index">© 2025 TechEdu XP • Desenvolvido por Pietro Rennó e Vinicius Montuani</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
